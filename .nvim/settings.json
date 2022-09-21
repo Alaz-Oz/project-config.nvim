@@ -1,0 +1,4 @@
+{
+    "debug_exec" : "${PROJECT_ROOT}/build/debug/out/${PROJECT_NAME}",
+    "release_exec" : "${PROJECT_ROOT}/build/release/out/${PROJECT_NAME}"
+}
