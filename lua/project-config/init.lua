@@ -37,5 +37,9 @@ function M.get_settings()
     local file = Path:new(vim.fn.getcwd() .. "/.nvim/settings.json")
     return escape_tbl(vim.tbl_extend("force", config.settings, vim.json.decode(file:read())))
 end
+function M.settings_exist()
+    local file = Path:new(vim.fn.getcwd() .. "/.nvim/settings.json")
+    return file:exists()
+end
 
 return M
